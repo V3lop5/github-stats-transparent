@@ -114,6 +114,7 @@ class Queries(object):
             direction: DESC
         }},
         isFork: false,
+        privacy: PUBLIC,
         after: {"null" if owned_cursor is None else '"'+ owned_cursor +'"'}
     ) {{
       pageInfo {{
@@ -144,6 +145,7 @@ class Queries(object):
             field: UPDATED_AT,
             direction: DESC
         }},
+        privacy: PUBLIC,
         contributionTypes: [
             COMMIT,
             PULL_REQUEST,
