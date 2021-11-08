@@ -115,7 +115,7 @@ class Queries(object):
         }},
         isFork: false,
         privacy: PUBLIC,
-        ownerAffiliations: [OWNER, COLLABORATOR],
+        ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER],
         after: {"null" if owned_cursor is None else '"'+ owned_cursor +'"'}
     ) {{
       pageInfo {{
